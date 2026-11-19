@@ -1,0 +1,130 @@
+[
+  {
+    "id": "shiva-showcase",
+    "title": "Shiva Cinematic Odyssey",
+    "client": "Red Bull Media House",
+    "category": "Action Sports Documentary",
+    "duration": "2m 15s",
+    "software": ["DaVinci Resolve", "Adobe Premiere Pro", "After Effects"],
+    "year": "2026",
+    "videoUrl": "/videos/shiva_edit.mp4",
+    "thumbnailUrl": "/images/project1_thumb.jpg",
+    "featured": true,
+    "overview": "A high-octane visual journey following extreme freeriders in the Himalayas. The goal was to translate the sheer terror and beauty of high-altitude riding into a cohesive, heart-racing 2-minute film.",
+    "role": "Lead Editor, Sound Designer & Colorist",
+    "process": [
+      "Footage ingestion & multi-cam syncing of RED V-Raptor and drone rushes.",
+      "Developing a rhythm-based narrative cut matching the sound design beat.",
+      "Applying custom film-print LUT emulation and heavy grain mapping in DaVinci Resolve."
+    ],
+    "timeline": "3 Weeks",
+    "challenges": "Managing 12TB of mixed-resolution 8K RAW footage while working remotely with tight deadlines, and designing soundscapes with minimal ambient audio recorded on-site.",
+    "solutions": "Created a lightweight proxy workflow and built a sound library from scratch, utilizing Foley and synthesizers to recreate high-altitude winds and snowboard crunching.",
+    "feedback": {
+      "text": "The pacing of this cut is absolutely masterclass. It feels like watching a features film. The sound design is tactile and powerful.",
+      "author": "Marcus Thorne",
+      "role": "Creative Director",
+      "company": "Red Bull Media House"
+    },
+    "images": [
+      "/images/project1_shot1.jpg",
+      "/images/project1_shot2.jpg"
+    ]
+  },
+  {
+    "id": "lost-in-kyoto",
+    "title": "Lost in Kyoto",
+    "client": "Sony Alpha Films",
+    "category": "Cinematic Travel Film",
+    "duration": "1m 45s",
+    "software": ["DaVinci Resolve", "Audition"],
+    "year": "2025",
+    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "thumbnailUrl": "/images/project2_thumb.jpg",
+    "featured": true,
+    "overview": "An editorial exploration of Kyoto's night-life. Shot on Sony FX3, this piece focuses on neon contrast, rain reflections, and slow-shutter motion design to evoke a dreamlike state.",
+    "role": "Director & Video Editor",
+    "process": [
+      "Assembled a non-linear storyline centered on sensory impressions.",
+      "Crafted a binaural soundscape of Japanese streets, rain, and distant train stations.",
+      "Graded with high contrast curves to emphasize neon reflections in wet streets."
+    ],
+    "timeline": "2 Weeks",
+    "challenges": "Kyoto's narrow streets presented low lighting, resulting in noise in dark shadow regions.",
+    "solutions": "Used temporal noise reduction nodes in DaVinci Resolve and mapped custom grain overlays to blend the noise texture into a filmic aesthetic.",
+    "feedback": {
+      "text": "Every frame feels like a painting. This edit captures the essence of Kyoto in a way that feels incredibly intimate.",
+      "author": "Yuki Tanaka",
+      "role": "Marketing Lead",
+      "company": "Sony Asia"
+    },
+    "images": [
+      "/images/project2_shot1.jpg",
+      "/images/project2_shot2.jpg"
+    ]
+  },
+  {
+    "id": "cyberpunk-2099",
+    "title": "Cyberpunk Future Promo",
+    "client": "CD Projekt Red",
+    "category": "Commercial Promotion",
+    "duration": "1m 00s",
+    "software": ["After Effects", "DaVinci Resolve", "Premiere Pro", "Blender"],
+    "year": "2026",
+    "videoUrl": "https://www.w3schools.com/html/movie.mp4",
+    "thumbnailUrl": "/images/project3_thumb.jpg",
+    "featured": true,
+    "overview": "A high-energy editing layout utilizing heavy match-cuts, datamoshing, and 3D camera projections to market a futuristic gaming title.",
+    "role": "Motion Graphic Editor",
+    "process": [
+      "Integrating 3D Blender camera tracking with live-action footage.",
+      "Crafting rhythmic, dynamic visual transitions utilizing speed ramps and zoom blurs.",
+      "Synthesizing glitch audio and deep sub-drops for immersive sound impact."
+    ],
+    "timeline": "4 Weeks",
+    "challenges": "Blending cinematic game models with raw video files without making the CG elements look out of place.",
+    "solutions": "Implemented matching lens distortion, matched focal lengths in Blender, and applied global color grading and film grain in DaVinci Resolve.",
+    "feedback": {
+      "text": "A breathtaking trailer. The speed ramps and visual transitions are incredibly sharp and energetic.",
+      "author": "Adam Kiciński",
+      "role": "Product Owner",
+      "company": "CD Projekt Red"
+    },
+    "images": [
+      "/images/project3_shot1.jpg",
+      "/images/project3_shot2.jpg"
+    ]
+  },
+  {
+    "id": "echoes-of-silence",
+    "title": "Echoes of Silence",
+    "client": "National Geographic",
+    "category": "Short Documentary",
+    "duration": "5m 30s",
+    "software": ["DaVinci Resolve", "Adobe Premiere Pro", "Audition"],
+    "year": "2025",
+    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "thumbnailUrl": "/images/project4_thumb.jpg",
+    "featured": false,
+    "overview": "A quiet, patient documentary about the melting glaciers in Iceland, focusing on long wide-shots, ambient sound, and color precision to highlight the dramatic impact of climate change.",
+    "role": "Lead Editor & Colorist",
+    "process": [
+      "Created a slow-paced cut focused on long, breathtaking atmospheric shots.",
+      "Applied a natural, desaturated color grading process focusing on blues, cyans, and cold whites.",
+      "Layered delicate wind and hydrophone-recorded melting ice sounds."
+    ],
+    "timeline": "6 Weeks",
+    "challenges": "Keeping the audience engaged during long, silent shots without losing the cinematic tension.",
+    "solutions": "Used micro-movements, subtle scale zooms in post-production, and cross-fading sound design to create an underlying sensory rhythm.",
+    "feedback": {
+      "text": "Stunning work. The editing respects the silence of the glacier and tells a powerful visual story.",
+      "author": "Sarah Jenkins",
+      "role": "Senior Producer",
+      "company": "National Geographic"
+    },
+    "images": [
+      "/images/project4_shot1.jpg",
+      "/images/project4_shot2.jpg"
+    ]
+  }
+]

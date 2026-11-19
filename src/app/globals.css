@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-matte: #080808;
+  --color-bg-charcoal: #111111;
+  --color-bg-surface: #161616;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b8b8b8;
+  --color-accent: #0066ff; /* Easily changeable accent color */
+  --color-accent-glow: #00d2ff;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-outfit), sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #080808;
+  color: #ffffff;
+  font-family: var(--font-outfit), sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0066ff;
+}
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.04"/%3E%3C/svg%3E') repeat;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 9999;
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-5%, -10%); }
+  20% { transform:translate(-15%, 5%); }
+  30% { transform:translate(7%, -25%); }
+  40% { transform:translate(-5%, 25%); }
+  50% { transform:translate(-15%, 10%); }
+  60% { transform:translate(15%, 0%); }
+  70% { transform:translate(0%, 15%); }
+  80% { transform:translate(3%, 35%); }
+  90% { transform:translate(-10%, 10%); }
+}
+
+/* Sound Wave Loader Animation */
+.sound-bar {
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background-color: #0066ff;
+  border-radius: 3px;
+  animation: sound-bounce 1.2s ease-in-out infinite alternate;
+}
+
+.sound-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.sound-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.sound-bar:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.sound-bar:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+@keyframes sound-bounce {
+  0% { transform: scaleY(0.1); }
+  100% { transform: scaleY(1); }
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(22, 22, 22, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hide default cursor globally on hoverable elements if custom cursor is enabled */
+.custom-cursor-active a,
+.custom-cursor-active button,
+.custom-cursor-active [role="button"],
+.custom-cursor-active input,
+.custom-cursor-active select,
+.custom-cursor-active textarea {
+  cursor: none !important;
+}
+.custom-cursor-active {
+  cursor: none !important;
+}
+
+/* Text Mask Reveal Utilities */
+.reveal-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
